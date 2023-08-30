@@ -1,0 +1,29 @@
+- name: nagababu
+  dob: 21-04-83
+  #this is map
+  address:
+    city: hyd
+    country: India
+    dno: 302
+  addresses:
+  - type: perm
+    city: blr
+    country: India
+  -type: current
+    city: london
+    country: uk
+- name: Linitha
+  dob: 22-08-89
+  #this is map
+  address:
+    city: hyd
+    country: India
+    dno: 302
+  addresses:
+  - type: perm
+    city: blr
+    country: India
+  -type: current
+    city: london
+    country: uk
+
