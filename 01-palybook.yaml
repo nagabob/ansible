@@ -3,5 +3,5 @@
   hosts: localhost
   #this is list of tasks/modules/collections
   tasks:
-  - name: pinging the node
+  name: pinging the node
     ansible.builting.ping:
