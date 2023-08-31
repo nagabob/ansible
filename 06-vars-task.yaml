@@ -1,5 +1,5 @@
-- name: variables at task level
-  host: localhost
+- name: variables at play level and task level
+  hosts: localhost
   vars:
   - money: 1L
     land: 2acres
