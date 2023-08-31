@@ -3,6 +3,6 @@
   hosts: mongodb
 
   tasks:
-    name: printing variables from a file
+  - name: printing variables from a file
     ansible.builtin.debug:
       msg: " Hello I am learning {{COURSE}} trainer is {{TRAINER}} and course duration is {{DURATION}}"
