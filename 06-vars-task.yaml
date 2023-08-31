@@ -1,0 +1,16 @@
+- name: variables at task level
+  host: localhost
+  vars:
+  - money: 1L
+  - land: 2acres
+
+  tasks:
+  - name: calling variables from play level
+    ansible.builtin.debug:
+      msg: " I've money {{money}} and land {{land}}"
+  - name: calling variables from play level and overriding the value
+    vars:
+    - money: 2L
+    - houses: 3h
+    ansible.builtin.debug:
+      msg: "I've money {{money}}, land {{land}} and houses {{houses}}"
