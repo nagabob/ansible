@@ -1,3 +1,5 @@
+# list of inputs - need to use
+#this is perosn1
 - name: nagababu
   dob: 21-04-83
   #this is map
@@ -12,6 +14,7 @@
   -type: current
     city: london
     country: uk
+#this is person2 data    
 - name: Linitha
   dob: 22-08-89
   #this is map
