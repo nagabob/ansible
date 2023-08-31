@@ -1,5 +1,6 @@
 - name: install nginx
   hosts: mongodb
+  become: yes # this will give sudo access
   tasks: 
   - name: install nginx
     ansible.builtin.yum:
@@ -9,5 +10,5 @@
     ansible.builtin.service:
       name: nginx
       state: started
-      
+
 
