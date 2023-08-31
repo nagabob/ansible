@@ -2,5 +2,5 @@
   hosts: mongodb
   tasks:
   - name: print hello world
-    ansible.builting.debug
-      msg: hello iam learining Deevops
+    ansible.builting.debug:
+      msg: hello iam learining Devops
