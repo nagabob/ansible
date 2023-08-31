@@ -13,4 +13,4 @@
     ansible.builtin.debug:
       msg: 
       - hellow iam learning {{COURSE}}, Trainer is {{TRAINER}} and Duration is {{DURATION}}
-      - Training is {{TRAINER}}
+      - Trainer is {{TRAINER}}
