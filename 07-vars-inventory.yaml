@@ -3,5 +3,5 @@
   
   tasks:
   - name: printing variables
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Mongo username is {{MONGODB_UNAME}} and DB is {{MONGO_DB}}"
