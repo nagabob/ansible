@@ -12,3 +12,4 @@
   - name: printing variables
     ansible.builtin.debug:
       msg: hellow iam learning {{COURSE}}, Trainer is {{TRAINER}} and Duration is {{DURATION}}
+      msg: Training is {{TRAINER}}
