@@ -1,5 +1,6 @@
 - name: printing variables from inventory files
   hosts: localhost
+  
   tasks:
   - name: printing variables from inventory
     ansible.buitin.debug:
