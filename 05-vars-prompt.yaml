@@ -9,6 +9,6 @@
     private: true
   
   tasks:
-    name: printing varaibles from prompt
+  - name: printing varaibles from prompt
     ansible.builtin.debug:
       msg: "entered username is {{USERNAME}} and password is {{PASSWORD}}"
