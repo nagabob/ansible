@@ -2,6 +2,6 @@
   hosts: mongodb
   
   tasks:
-  - name: printing variables from inventory
+  - name: printing variables
     ansible.buitin.debug:
       msg: "Mongo username is {{MONGODB_UNAME}} and DB is {{MONGO_DB}}"
