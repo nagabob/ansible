@@ -1,2 +1,5 @@
 [mongodb]
 172.31.33.198
+[mongodb:vars]
+MONGODB_UNAME=mongodbadmin
+MONGO_DB=categories
