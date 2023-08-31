@@ -4,5 +4,5 @@
 
   tasks:
     name: printing variables from a file
-    ansible.builting.debug:
+    ansible.builtin.debug:
       msg: " Hello I am learning {{COURSE}} trainer is {{TRAINER}} and course duration is {{DURATION}}"
