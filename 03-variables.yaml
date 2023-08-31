@@ -1,6 +1,14 @@
 - name: variables in ansible
   hosts: mongodb
+  #This is play level variables
+  vars:
+    COURSE: DevOps
+    TRAINER: Siva
+    DURATION: 120Hrs
   tasks:
   - name: print hello world
     ansible.builtin.debug:
       msg: hello iam learining Devops
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: hellow iam learning "{{COURSE}}", Trainer is "{{TRAINER}}" and Duration is "{{DURATION}}"
