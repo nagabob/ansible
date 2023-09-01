@@ -3,7 +3,7 @@
 
   tasks:
   - name: print the names using loops
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello {{item}}"
     loop:
     - naga
