@@ -3,10 +3,10 @@
   become: yes
 
   tasks:
-  - name: "install/remove packages"
+  - name: install or remove packages
     ansible.builtin.yum:
-    name: "{{item.name}}"
-    state: "{{item.state}}"
+      name: "{{item.name}}"
+      state: "{{item.state}}"
 
     loop:
     - {name: nginx, state: installed }
