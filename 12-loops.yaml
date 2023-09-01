@@ -5,10 +5,10 @@
   - name: print the names using loops
     ansible.builtin.debug:
       msg: "Hello {{item}}"
-    # loop:
+    # loop:   # To loop the each name
     # - naga
     # - babu
     # - raja
     # - linitha
-    with_sequence:
+    with_sequence: # to get the sequence in the range 1 to 10 including both
       - "1-10"
