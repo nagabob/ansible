@@ -12,6 +12,7 @@
       msg: "Command output is {{out}}" 
   
   - name: create a user based on condition
+    become: yes # to get the ssudo access for this task
     when: out.rc != 0
     ansible.builtin.user:
       name: roboshop
