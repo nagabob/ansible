@@ -1,6 +1,6 @@
 
 - name: install packages using loop
-  hosts: localhost
+  hosts: mongodb
 
   tasks:
   - name: install a packages
