@@ -7,4 +7,4 @@
   - name: print something if condition is true
     ansible.builtin.debug:
       msg: The name is {{NAME}}
-    when: NAME == "DevOps"
+    when: NAME == "Devops"
