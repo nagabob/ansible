@@ -6,6 +6,12 @@
     ansible.builtin.command: id roboshop
     register: out #out is a variable name
     ignore_errors: true # to ignore the above command error
+  
   - name: print the output of the command
     ansible.builtin.debug:
       msg: "Command output is {{out}}" 
+  
+  - name: create a user based on condition
+    when: out.rc != 0
+    ansible.builtin.user:
+      name: roboshop
