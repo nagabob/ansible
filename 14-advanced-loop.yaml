@@ -3,7 +3,7 @@
   become: yes
 
   tasks:
-  - name: install or remove packages
+  - name: install/remove packages
     ansible.builtin.yum:
       name: "{{item.name}}"
       state: "{{item.state}}"
