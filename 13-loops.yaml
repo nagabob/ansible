@@ -3,12 +3,12 @@
   hosts: mongodb
 
   tasks:
-  - name: install a packages
-    become: yes
-    ansible.builtin.yum:
-      name: "{{item}}"
-      state: installed
-    loop:
-    - nginx
-    - postfix
+    - name: install a packages
+      become: yes
+      ansible.builtin.yum:
+        name: "{{item}}"
+        state: installed
+      loop:
+      - nginx
+      - postfix
 
