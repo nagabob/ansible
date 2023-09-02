@@ -1,6 +1,6 @@
 
 - name: install packages using loop
-  hosts: mongodb
+  hosts: all
 
   tasks:
     - name: install a packages
